@@ -1,2 +1,2 @@
 # prodyn
-Protein Dynamics (ProDyn) Prediction
+ProDyn - Protein Dynamics Prediction Tasks
