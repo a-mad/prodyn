@@ -2,7 +2,7 @@
 ProDyn - Protein Dynamics Prediction
 
 ### ProDyn0
-Conformational mechanics of point-mutated calponin homology domains, CH1 and CH2, connected by a tether. Different steered and fixed residues are assigned for molecular dynamics simulation of domain stretching behavior. Input is defined as a graph with node features (residue type, secondary structure, and properties), edge features (dihedrals, h-bonds, steer-to-fixed distance), and edge connections. Output is of two types: (1) force mode classification and (2) max force (magnitude and time) regression.
+Conformational mechanics of point-mutated calponin homology domains, CH1 and CH2, connected by a tether. Different steered and fixed residues are assigned for molecular dynamics simulation of domain stretching behavior. Input is defined as a graph with node features (residue type, secondary structure, and properties), edge features (dihedrals, h-bonds, steer-to-fixed distance), and edge connections. Output is of two types: (1) force mode classification and (2) max force (magnitude and time) regression. For the regression output, magnitude is the first index and time is the second index. The max force values were scaled, to retrieve the original units multiply magnitude by 800 to get kJ/mol/nm and multiply time by 5000 to get psec.
 
 The zip file "prodyn0_data.zip" contains 3 Python3-pickled data files for training, validation, and test datasets. As an example, the training data can be imported to extract the input and output data as named below:
 ```
